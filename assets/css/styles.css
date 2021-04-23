@@ -1,0 +1,111 @@
+body{
+   
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.nav-bar{
+   
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    
+    
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+}
+.nav-bar .nav-items .links,
+.nav-bar,
+.footer .footer-disclaimer,
+.footer .footer-disclaimer p{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+.nav-bar .nav-items{
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    place-items: center;
+    margin: auto;
+    height: 4vh;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 13;
+}
+
+.nav-bar .nav-items .links{
+    height: 4vh;
+    width: 20vw;
+    padding-top: 1.5vh;
+    cursor: pointer;
+    font-size: 26px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-top-style: groove;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-bottom-style: groove;
+    font-weight: bold;
+    transition: 0.5s;
+    background-size: 200% auto;
+   
+  
+}
+.nav-bar .nav-items .links:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    background: #AC3B61;
+    text-transform: uppercase;
+    border-bottom-style: ridge;
+    border-bottom-color: chartreuse;
+    border-bottom-width: 2px;
+    border-top: yellow;
+    background-position: -100%;
+    
+}
+
+
+iframe{
+    width: 100%;
+    overflow:visible;
+    margin: auto;
+}
+
+.container,
+.content{
+    width: 80%;
+    margin: auto;
+    min-height: 50vh;
+}
+.content{
+    display: flex;
+    width:90%;
+    height:auto;
+    overflow-y:visible;
+}
+
+.footer{
+    width: 100%;
+    height: 5vh;
+}
+.footer .footer-disclaimer p{
+    color: rgb(49, 142, 165);
+    font-size: 25px;
+}
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    .nav-bar .nav-items{
+        width: 100%;
+    }
+    .nav-bar .nav-items .links{
+        width: 35vw;
+        height: 5vh;
+        font-size: 2.5vh;
+    }
+
+    .container,
+    .content{
+        width:100%;
+    }
+  }
